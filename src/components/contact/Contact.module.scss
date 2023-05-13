@@ -1,0 +1,215 @@
+.wrapper {
+  @apply bg-soft-black;
+
+  .root {
+    @apply h-[1040px] flex flex-col items-center justify-center px-[100px] bg-soft-black;
+
+    .title {
+      @apply relative -mt-5 mb-40 bg-transparent;
+
+      h3 {
+        @apply uppercase font-black bg-transparent text-5xl text-violet tracking-widest pl-40 -mb-1;
+      }
+
+      span {
+        @apply bg-transparent tracking-normal text-transparent text-[150px] absolute left-[90px] -top-16  opacity-60;
+        -webkit-text-stroke: 1px #cdd5df;
+        -webkit-user-select: none;
+      }
+
+      div {
+        @apply bg-violet h-0.5;
+      }
+    }
+
+    .main_container {
+      @apply flex justify-between w-full bg-transparent;
+
+      .contacts_inner {
+        @apply bg-transparent mt-9;
+
+        .contact {
+          @apply bg-transparent text-right mb-[60px];
+
+          span {
+            @apply bg-transparent text-lg text-grey;
+          }
+
+          span:first-of-type + span {
+            @apply mx-3 font-semibold uppercase;
+          }
+
+          svg {
+            @apply inline-block bg-transparent text-4xl fill-grey;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1360px) {
+      .title {
+        h3 {
+          span {
+            @apply left-[50px];
+          }
+        }
+      }
+
+      .main_container {
+        .contacts_inner {
+          @apply mt-2 ml-10;
+
+          .contact {
+            @apply flex flex-col items-center gap-2 mb-[40px];
+            span {
+              @apply order-3;
+            }
+
+            span:first-of-type + span {
+              @apply order-2;
+            }
+
+            svg {
+              @apply order-1;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1220px) {
+      @apply h-[1100px];
+
+      .title {
+        h3 {
+          @apply text-4xl;
+
+          span {
+            @apply text-[120px];
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 950px) {
+      @apply h-[1000px] px-[50px];
+
+      .title {
+        @apply -ml-[320px] mb-28;
+      }
+
+      .main_container {
+        .contacts_inner {
+          .contact {
+            @apply flex flex-col items-center gap-2 mb-[40px];
+            span {
+              @apply text-base;
+            }
+
+            svg {
+              @apply text-3xl;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 765px) {
+      .title {
+        @apply mb-20;
+
+        h3 {
+          @apply text-3xl;
+
+          span {
+            @apply text-[100px];
+          }
+        }
+      }
+
+      .main_container {
+        @apply flex flex-col;
+
+        form {
+          @apply order-3;
+        }
+
+        .contacts_inner {
+          @apply flex justify-between w-full order-1 ml-0 mb-20 mt-0;
+
+          .contact {
+            @apply mb-0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      @apply h-[920px];
+
+      .title {
+        @apply mb-28;
+
+        h3 {
+          @apply text-lg;
+
+          span {
+            @apply text-[75px] left-[120px] -top-8;
+          }
+        }
+      }
+
+      .main_container {
+        .contacts_inner {
+          .contact {
+            span {
+              @apply text-xs;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      @apply h-[940px];
+
+      .main_container {
+        .contacts_inner {
+          @apply block mb-10;
+
+          .contact {
+            @apply block mb-10;
+          }
+
+          .contact:last-child {
+            @apply mb-0;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      @apply h-[1050px];
+
+      .title {
+        @apply mb-20 -ml-[250px] -mt-12;
+
+        h3 {
+          @apply text-base;
+
+          span {
+            @apply text-[55px] left-[120px] -top-6;
+          }
+        }
+      }
+
+      .main_container {
+        .contacts_inner {
+          .contact {
+            @apply flex;
+          }
+        }
+      }
+    }
+  }
+}

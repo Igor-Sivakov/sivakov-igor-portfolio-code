@@ -1,0 +1,7 @@
+.wrapper {
+  @apply min-w-[370px];
+
+  .root {
+    @apply w-full max-w-[1440px];
+  }
+}

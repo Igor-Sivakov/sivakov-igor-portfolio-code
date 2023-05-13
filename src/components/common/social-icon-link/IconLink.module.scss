@@ -1,0 +1,12 @@
+.link {
+  @apply bg-transparent;
+  svg {
+    @apply fill-dark-grey transition-all duration-[0.4s] bg-transparent;
+  }
+
+  &:hover {
+    svg {
+      @apply fill-crimson -translate-y-0.5;
+    }
+  }
+}

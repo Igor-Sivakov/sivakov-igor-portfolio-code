@@ -1,0 +1,44 @@
+.nav_toggle {
+  @apply w-[30px] text-[0] text-transparent relative cursor-pointer border-none z-10 mt-3;
+  background: none;
+
+  .nav_toggle__item {
+    @apply block w-full h-[3px] bg-white absolute top-0 left-0 right-0 bottom-0 m-auto;
+    transition: background 0.3s linear;
+
+    &::before,
+    &::after {
+      content: '';
+      @apply w-full h-[3px] absolute bg-white left-0 z-10;
+      transition: transform 0.3s linear;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+
+    &::before {
+      top: -8px;
+    }
+  }
+
+  &__active {
+    .nav_toggle__item {
+      background: none;
+
+      &::after {
+        transform: rotate(-45deg) translate3d(0px, 3px, 0px);
+        transform-origin: left bottom;
+      }
+
+      &::before {
+        transform: rotate(45deg) translate3d(0px, -3px, 0px);
+        transform-origin: left top;
+      }
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}

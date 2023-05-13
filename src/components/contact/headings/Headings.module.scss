@@ -1,0 +1,23 @@
+.root {
+  @apply flex w-full justify-between mb-16 bg-transparent;
+
+  .name {
+    @apply min-w-[175px] text-[25px] font-bold bg-transparent;
+  }
+
+  .decor {
+    @apply flex w-full items-center bg-transparent;
+
+    .or {
+      @apply bg-transparent;
+    }
+
+    .line {
+      @apply h-[1px] mx-4 bg-[#686666] w-full;
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+    @apply hidden;
+  }
+}

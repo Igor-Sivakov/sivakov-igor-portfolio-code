@@ -1,0 +1,61 @@
+.root {
+  @apply absolute top-0 left-[1340px] opacity-100 w-[1440px] h-[280px] flex flex-col items-center justify-center bg-[#05090fae];
+  animation-duration: 1.5s, 1.5s;
+  animation-delay: 0s, 7s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  &__shown {
+    animation-name: show-in, show-out;
+  }
+
+  .icon {
+    @apply w-[150px] h-[150px] mb-5;
+
+    img {
+      @apply w-full h-full rounded-[100px];
+    }
+  }
+
+  .title {
+    @apply text-xl font-bold uppercase tracking-wider mb-2;
+  }
+
+  .message {
+    @apply text-lg tracking-wider;
+  }
+}
+
+@keyframes show-in {
+  0% {
+    opacity: 0;
+    left: 1340px;
+  }
+
+  30% {
+    opacity: 0.7;
+    left: 600px;
+  }
+
+  100% {
+    opacity: 1;
+    left: -96px;
+  }
+}
+
+@keyframes show-out {
+  0% {
+    opacity: 1;
+    left: -96px;
+  }
+
+  30% {
+    opacity: 0.3;
+    left: -500px;
+  }
+
+  100% {
+    opacity: 0;
+    left: -1540px;
+  }
+}

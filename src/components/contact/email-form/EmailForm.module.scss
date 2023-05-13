@@ -1,0 +1,62 @@
+.root {
+  @apply bg-transparent w-full max-w-[550px];
+
+  .input_container {
+    @apply h-[95px] bg-transparent;
+
+    label {
+      @apply block mb-1 bg-transparent text-grey;
+    }
+
+    input {
+      @apply border-2 border-dark-grey py-2 px-3 w-full bg-transparent;
+
+      &:focus-within {
+        @apply border-white;
+      }
+    }
+  }
+
+  .textarea {
+    @apply bg-transparent h-[150px] mt-5 relative;
+
+    textarea {
+      @apply px-3 py-2 border-2 border-dark-grey w-full h-full bg-transparent;
+
+      &:focus-within {
+        @apply border-white;
+      }
+    }
+  }
+
+  .submit {
+    @apply mt-5 font-semibold text-grey border-2 border-dark-grey 
+    w-[220px] h-[45px] absolute right-0 -bottom-[70px] transition-all duration-300 flex items-center justify-center;
+
+    &:hover {
+      @apply bg-white border-white text-soft-black;
+    }
+
+    &:active {
+      @apply translate-y-0.5;
+    }
+
+    img {
+      @apply w-full h-full;
+    }
+  }
+
+  .error {
+    @apply text-crimson tracking-wider text-xs bg-transparent;
+  }
+
+  @media screen and (max-width: 765px) {
+    @apply max-w-[750px];
+  }
+
+  @media screen and (max-width: 500px) {
+    .submit {
+      @apply w-[175px] text-sm;
+    }
+  }
+}

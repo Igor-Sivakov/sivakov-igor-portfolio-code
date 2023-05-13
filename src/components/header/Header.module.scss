@@ -1,0 +1,113 @@
+.root {
+  @apply absolute z-50  w-full max-w-[1440px] transition-all duration-300 bg-transparent;
+
+  &__sticky {
+    @apply fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #2c2c2cc0;
+  }
+
+  .wrapper {
+    @apply py-[20px] px-[50px] flex justify-between bg-transparent transition-all duration-300 relative;
+
+    &__sticky {
+      @apply py-0;
+    }
+
+    .menu_container {
+      @apply flex items-center h-[60px] bg-transparent;
+
+      svg {
+        @apply text-5xl bg-transparent;
+        animation: App-logo-spin infinite 20s linear;
+      }
+      .menu {
+        @apply bg-transparent;
+
+        .menu_nav {
+          @apply flex ml-10 bg-transparent;
+
+          .current_item {
+            a {
+              @apply text-[#fff];
+            }
+
+            &::after {
+              @apply w-full;
+            }
+          }
+
+          li {
+            @apply mx-4 relative capitalize bg-transparent;
+
+            a {
+              @apply bg-transparent;
+            }
+
+            &:hover {
+              a {
+                @apply text-[#fff];
+              }
+            }
+
+            &::after {
+              content: '';
+              @apply absolute left-0 -bottom-2 h-[1px] w-0 bg-[#fff] transition-all duration-300;
+            }
+
+            &:hover::after {
+              @apply w-full bg-crimson;
+            }
+          }
+        }
+      }
+    }
+
+    .social_container {
+      @apply flex gap-6 items-center bg-transparent;
+
+      a {
+        @apply text-3xl;
+      }
+    }
+
+    .burger_menu {
+      @apply hidden bg-transparent w-[50px] h-[50px];
+    }
+  }
+
+  @media screen and (max-width: 849px) {
+    .wrapper {
+      .burger_menu {
+        @apply flex items-center justify-center;
+
+        svg {
+          @apply text-4xl bg-transparent mt-1.5;
+        }
+      }
+
+      .menu_container {
+        .menu {
+          @apply hidden;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .wrapper {
+      .social_container {
+        @apply hidden;
+      }
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

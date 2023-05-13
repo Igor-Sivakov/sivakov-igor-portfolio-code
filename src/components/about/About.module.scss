@@ -1,0 +1,239 @@
+.root {
+  @apply h-[1000px] bg-soft-black flex items-center px-[100px];
+
+  .wrapper {
+    @apply flex justify-between items-center -mt-20 w-full bg-transparent;
+
+    .photo {
+      @apply w-[450px]  min-w-[450px] rounded-lg bg-transparent;
+
+      img {
+        @apply w-[450px] h-[600px] rounded-lg;
+      }
+    }
+
+    .info_container {
+      @apply bg-transparent pr-40;
+
+      .title {
+        @apply bg-transparent h-[240px] pt-[90px] relative border-b
+       border-[#cdd5dfcc];
+
+        h3 {
+          @apply text-5xl uppercase text-violet font-black tracking-widest  bg-transparent;
+
+          span {
+            @apply bg-transparent tracking-normal text-transparent text-[150px] absolute left-0 -top-3  opacity-60;
+            -webkit-text-stroke: 1px #cdd5df;
+            -webkit-user-select: none;
+          }
+        }
+
+        p {
+          @apply bg-transparent mt-4 tracking-widest;
+        }
+      }
+
+      .info_text {
+        @apply bg-transparent mt-10;
+
+        p {
+          @apply bg-transparent font-light leading-8;
+          font-family: 'Mulish', sans-serif;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1360px) {
+    @apply h-[920px] px-[80px];
+
+    .wrapper {
+      @apply -mt-5;
+
+      .photo {
+        @apply w-[400px]  min-w-[400px];
+
+        img {
+          @apply w-[400px] h-[520px];
+        }
+      }
+
+      .info_container {
+        @apply pr-20;
+
+        .title {
+          @apply h-[170px] pt-[60px];
+
+          h3 {
+            @apply text-4xl;
+
+            span {
+              @apply text-[120px];
+            }
+          }
+        }
+
+        .info_text {
+          @apply mt-5;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    @apply h-[1000px];
+
+    .wrapper {
+      .photo {
+        @apply w-[350px]  min-w-[350px];
+
+        img {
+          @apply w-[350px] h-[450px];
+        }
+      }
+
+      .info_container {
+        @apply pr-12;
+
+        .title {
+          @apply h-[140px] pt-[45px];
+
+          h3 {
+            @apply text-3xl;
+
+            span {
+              @apply text-[100px];
+            }
+          }
+
+          p {
+            @apply text-sm;
+          }
+        }
+
+        .info_text {
+          p {
+            @apply leading-7;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    @apply h-[1400px];
+
+    .wrapper {
+      @apply flex-col mt-0 items-start;
+
+      .photo {
+        @apply order-1 w-[450px]  min-w-[450px];
+
+        img {
+          @apply w-[450px] h-[600px];
+        }
+      }
+
+      .info_container {
+        @apply order-2 pr-5;
+
+        .title {
+          h3 {
+            @apply text-4xl;
+          }
+
+          span {
+            @apply hidden;
+          }
+
+          p {
+            @apply mt-2 text-lg;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    @apply h-[1500px];
+  }
+
+  @media screen and (max-width: 620px) {
+    @apply px-[50px] h-[1400px];
+
+    .wrapper {
+      .photo {
+        @apply w-[350px]  min-w-[350px];
+
+        img {
+          @apply w-[350px] h-[460px];
+        }
+      }
+
+      .info_container {
+        .title {
+          @apply h-[125px] pt-[35px];
+
+          h3 {
+            @apply text-3xl;
+          }
+
+          p {
+            @apply mt-0 text-base;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 520px) {
+    @apply h-[1250px] pr-0;
+
+    .wrapper {
+      .photo {
+        @apply w-[300px]  min-w-[300px];
+
+        img {
+          @apply w-[300px] h-[400px];
+        }
+      }
+
+      .info_container {
+        @apply pr-16;
+
+        .title {
+          @apply h-[110px] pt-[30px];
+
+          h3 {
+            @apply text-2xl;
+          }
+
+          p {
+            @apply text-sm;
+          }
+        }
+
+        .info_text {
+          p {
+            @apply text-sm leading-6;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    @apply h-[1350px];
+  }
+
+  @media screen and (max-width: 400px) {
+    @apply pl-[40px];
+
+    .wrapper {
+      .info_container {
+        @apply pr-10;
+      }
+    }
+  }
+}

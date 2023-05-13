@@ -1,0 +1,111 @@
+.wrapper {
+  @apply bg-soft-black;
+
+  .root {
+    @apply bg-soft-black h-[1320px] pt-[120px] px-10;
+
+    .title {
+      @apply relative mt-10 mb-40 bg-transparent;
+
+      h3 {
+        @apply uppercase font-black bg-transparent text-5xl text-violet tracking-widest pl-40 -mb-1;
+      }
+
+      span {
+        @apply bg-transparent tracking-normal text-transparent text-[150px] absolute left-[90px] -top-16  opacity-60;
+        -webkit-text-stroke: 1px #cdd5df;
+        -webkit-user-select: none;
+      }
+
+      div {
+        @apply bg-violet h-0.5;
+      }
+    }
+
+    .projects_container {
+      @apply bg-transparent flex justify-center flex-wrap gap-10;
+    }
+
+    @media screen and (max-width: 1360px) {
+      @apply h-[1800px] pt-[110px];
+    }
+
+    @media screen and (max-width: 1100px) {
+      @apply pt-[100px] h-[1760px];
+
+      .title {
+        h3 {
+          @apply text-4xl;
+
+          span {
+            @apply text-[120px] -top-14;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 919px) {
+      @apply h-[2700px] pt-[80px];
+
+      .title {
+        @apply mb-28;
+
+        h3 {
+          @apply text-2xl;
+
+          span {
+            @apply text-[100px] -top-12;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 775px) {
+      @apply h-[2680px] pt-[60px];
+
+      .title {
+        @apply mb-28;
+
+        h3 {
+          @apply text-xl;
+
+          span {
+            @apply text-[80px] -top-9;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      @apply h-[2640px];
+
+      .title {
+        @apply mb-20;
+
+        h3 {
+          @apply pl-20  text-lg;
+
+          span {
+            @apply text-[60px] left-[40px] -top-7;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      @apply h-[2080px] px-5;
+
+      .title {
+        @apply mt-5;
+
+        h3 {
+          @apply pl-20  text-base;
+
+          span {
+            @apply text-[48px] left-[20px] -top-5;
+          }
+        }
+      }
+    }
+  }
+}

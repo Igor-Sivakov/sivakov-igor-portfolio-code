@@ -1,0 +1,56 @@
+.root {
+  @apply bg-transparent h-full flex flex-col justify-between items-center;
+
+  .technologies {
+    @apply text-[12px] w-full text-center 
+    bg-[#10132358] font-bold;
+  }
+
+  .description {
+    @apply flex flex-col h-full justify-center items-center bg-transparent px-4;
+
+    h5 {
+      @apply bg-transparent text-xl font-bold;
+    }
+
+    p {
+      @apply text-[11px] text-white bg-transparent rounded-lg py-1 leading-4 font-medium;
+    }
+
+    .login_info {
+      @apply bg-transparent;
+
+      span {
+        @apply bg-transparent text-[12px] mx-0.5;
+      }
+
+      span:nth-child(2n) {
+        @apply text-crimson font-medium;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .technologies {
+      @apply text-[8px];
+    }
+
+    .description {
+      @apply px-1;
+
+      h5 {
+        @apply text-sm;
+      }
+
+      p {
+        @apply text-[8px] py-0.5 leading-3;
+      }
+
+      .login_info {
+        span {
+          @apply text-[9px] mx-[1px];
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.root {
+  @apply w-[420px] h-[230px] transition-all duration-500;
+
+  &:hover {
+    transform: scale(1.2);
+    .overlay {
+      background-image: linear-gradient(#f6004ea7 20%, #000);
+    }
+  }
+
+  .overlay {
+    @apply w-[420px] h-[230px];
+    background: linear-gradient(#ffffff00 -20%, #000);
+  }
+
+  @media screen and (max-width: 480px) {
+    @apply w-[300px] h-[165px];
+
+    .overlay {
+      @apply w-[300px] h-[165px];
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.root {
+  @apply absolute h-0 top-[100px] w-full left-0 transition-all duration-300 overflow-hidden;
+
+  &__scroll {
+    @apply top-[60px];
+  }
+
+  &__visible {
+    @apply bg-[#2c2c2cc0] h-[200px] opacity-100;
+  }
+
+  .menu_nav {
+    @apply bg-transparent text-right pr-[58px] pt-2;
+
+    li {
+      @apply bg-transparent my-2.5 relative;
+
+      a {
+        @apply bg-transparent uppercase transition-all duration-300;
+      }
+
+      &:hover {
+        a {
+          @apply text-crimson;
+        }
+      }
+
+      &::after {
+        content: '';
+        @apply absolute left-0 -bottom-2 h-[1px] w-0 bg-[#fff] transition-all duration-300;
+      }
+    }
+
+    .current_item {
+      a {
+        @apply text-violet;
+      }
+
+      &::after {
+        @apply w-full bg-violet;
+      }
+    }
+  }
+
+  @media screen and (min-width: 850px) {
+    @apply hidden;
+  }
+}

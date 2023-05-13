@@ -1,0 +1,58 @@
+.root {
+  @apply flex flex-col w-[400px] h-[220px] justify-center items-start bg-transparent gap-8;
+
+  a {
+    @apply flex items-center bg-transparent relative ml-24;
+
+    svg {
+      @apply text-lg fill-grey ml-2 bg-transparent transition-all duration-300;
+    }
+
+    svg:first-child {
+      @apply text-sm;
+    }
+
+    span {
+      @apply text-xs text-grey ml-2 bg-transparent transition-all duration-300;
+    }
+
+    &:hover {
+      svg {
+        @apply fill-[#fff];
+      }
+
+      span {
+        @apply text-[#fff];
+      }
+    }
+
+    &::after {
+      content: '';
+      @apply absolute left-0 -bottom-1.5 h-[0.5px] w-0 bg-[#fff] transition-all duration-300;
+    }
+
+    &:hover::after {
+      @apply w-full;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    @apply w-[300px] h-[160px] gap-6;
+
+    a {
+      @apply ml-14;
+
+      svg {
+        @apply text-base ml-1.5;
+      }
+
+      svg:first-child {
+        @apply text-xs;
+      }
+
+      span {
+        @apply text-[11px]  ml-1.5;
+      }
+    }
+  }
+}
