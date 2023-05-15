@@ -13,11 +13,10 @@ import axios from '../img/skills-logo/axios.png'
 import flux from '../img/skills-logo/flux.jpeg'
 import git from '../img/skills-logo/git.png'
 import hook from '../img/skills-logo/hook.png'
-import npm from '../img/skills-logo/npm.png'
 import rest from '../img/skills-logo/rest-api.png'
 import scss from '../img/skills-logo/scss.png'
 import postgresql from '../img/skills-logo/postgresql.png'
-import unit from '../img/skills-logo/unit.png'
+import jest from '../img/skills-logo/jest.jpg'
 import express from '../img/skills-logo/express.png'
 import chakra from '../img/skills-logo/chakra.png'
 import nest from '../img/skills-logo/nest.png'
@@ -27,9 +26,6 @@ import reactQuery from '../img/skills-logo/react-query.png'
 import saga from '../img/skills-logo/redux-saga.png'
 import tailwind from '../img/skills-logo/tailwind.png'
 import figma from '../img/skills-logo/figma.png'
-import gitHub from '../img/skills-logo/github.png'
-import heroku from '../img/skills-logo/heroku.png'
-import vercel from '../img/skills-logo/vercel.jpeg'
 import graphQL from '../img/skills-logo/graphQL.png'
 import bem from '../img/skills-logo/BEM.png'
 import hookForm from '../img/skills-logo/hook-form.jpeg'
@@ -55,10 +51,9 @@ export const otherSkillsIcons = [
   { url: chakra, title: "Chakra UI" },
 
   { url: git, title: "GIT" },
-  { url: npm, title: "npm" },
   { url: flux, title: "FLUX" },
   { url: hook, title: "Hooks" },
-  { url: unit, title: "Unit tests" },
+  { url: jest, title: "Jest" },
 
   { url: rest, title: "REST API" },
   { url: graphQL, title: "GraphQL" },
@@ -68,9 +63,6 @@ export const otherSkillsIcons = [
   { url: socket, title: "Web-socket" },
 
   { url: figma, title: "Figma" },
-  { url: gitHub, title: "GitHub" },
-  { url: heroku, title: "Heroku" },
-  { url: vercel, title: "Vercel" },
 
   { url: thunk, title: "Redux-Thunk" },
   { url: saga, title: "Redux-Saga" },

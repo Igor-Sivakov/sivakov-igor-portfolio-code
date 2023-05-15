@@ -2,7 +2,7 @@
   @apply bg-soft-black;
 
   .root {
-    @apply bg-soft-black h-[1320px] pt-[120px] px-10;
+    @apply bg-soft-black h-[1900px] pt-[120px] px-10;
 
     .title {
       @apply relative mt-10 mb-40 bg-transparent;
@@ -26,12 +26,12 @@
       @apply bg-transparent flex justify-center flex-wrap gap-10;
     }
 
-    @media screen and (max-width: 1360px) {
-      @apply h-[1800px] pt-[110px];
+    @media screen and (max-width: 1419px) {
+      @apply h-[2850px] pt-[110px];
     }
 
     @media screen and (max-width: 1100px) {
-      @apply pt-[100px] h-[1760px];
+      @apply pt-[100px] h-[2820px];
 
       .title {
         h3 {
@@ -44,8 +44,8 @@
       }
     }
 
-    @media screen and (max-width: 919px) {
-      @apply h-[2700px] pt-[80px];
+    @media screen and (max-width: 959px) {
+      @apply h-[4600px] pt-[80px];
 
       .title {
         @apply mb-28;
@@ -61,7 +61,7 @@
     }
 
     @media screen and (max-width: 775px) {
-      @apply h-[2680px] pt-[60px];
+      @apply h-[4550px] pt-[60px];
 
       .title {
         @apply mb-28;
@@ -77,7 +77,7 @@
     }
 
     @media screen and (max-width: 650px) {
-      @apply h-[2640px];
+      @apply h-[4510px];
 
       .title {
         @apply mb-20;
@@ -93,7 +93,7 @@
     }
 
     @media screen and (max-width: 500px) {
-      @apply h-[2080px] px-5;
+      @apply h-[4120px] px-5;
 
       .title {
         @apply mt-5;

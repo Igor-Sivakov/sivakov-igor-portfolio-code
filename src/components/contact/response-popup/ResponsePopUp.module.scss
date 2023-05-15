@@ -1,5 +1,5 @@
 .root {
-  @apply absolute top-0 left-[1340px] opacity-100 w-[1440px] h-[280px] flex flex-col items-center justify-center bg-[#05090fae];
+  @apply absolute top-[400px] left-[1440px] opacity-100 w-[1440px] h-[280px] flex flex-col items-center justify-center bg-[#05090fae];
   animation-duration: 1.5s, 1.5s;
   animation-delay: 0s, 7s;
   animation-timing-function: linear;
@@ -22,14 +22,14 @@
   }
 
   .message {
-    @apply text-lg tracking-wider;
+    @apply text-[22px] tracking-wider;
   }
 }
 
 @keyframes show-in {
   0% {
     opacity: 0;
-    left: 1340px;
+    left: 1440px;
   }
 
   30% {
@@ -39,14 +39,14 @@
 
   100% {
     opacity: 1;
-    left: -96px;
+    left: 0px;
   }
 }
 
 @keyframes show-out {
   0% {
     opacity: 1;
-    left: -96px;
+    left: 0px;
   }
 
   30% {
@@ -56,6 +56,6 @@
 
   100% {
     opacity: 0;
-    left: -1540px;
+    left: -1440px;
   }
 }

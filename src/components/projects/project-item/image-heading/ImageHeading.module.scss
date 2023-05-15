@@ -1,0 +1,14 @@
+.root {
+  @apply bg-transparent h-full flex flex-col justify-between items-center;
+
+  .technologies {
+    @apply text-[12px] w-full text-center 
+    bg-[#10132358] font-bold;
+  }
+
+  @media screen and (max-width: 500px) {
+    .technologies {
+      @apply text-[8px];
+    }
+  }
+}

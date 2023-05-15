@@ -1,13 +1,9 @@
-import { FaFacebook, FaGithub, FaTelegram, FaLinkedinIn } from 'react-icons/fa'
+import { FaGithub, FaTelegram, FaLinkedinIn } from 'react-icons/fa'
 
 export const socialData = [
   {
     logo: FaLinkedinIn,
     url: '#',
-  },
-  {
-    logo: FaFacebook,
-    url: 'https://www.facebook.com/profile.php?id=100006686627451',
   },
   {
     logo: FaTelegram,

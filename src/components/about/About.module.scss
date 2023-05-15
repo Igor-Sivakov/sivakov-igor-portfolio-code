@@ -38,7 +38,7 @@
         @apply bg-transparent mt-10;
 
         p {
-          @apply bg-transparent font-light leading-8;
+          @apply bg-transparent font-light leading-8 mb-3;
           font-family: 'Mulish', sans-serif;
         }
       }
@@ -46,7 +46,7 @@
   }
 
   @media screen and (max-width: 1360px) {
-    @apply h-[920px] px-[80px];
+    @apply h-[1000px] px-[80px];
 
     .wrapper {
       @apply -mt-5;
@@ -82,7 +82,7 @@
   }
 
   @media screen and (max-width: 1100px) {
-    @apply h-[1000px];
+    @apply h-[1080px];
 
     .wrapper {
       .photo {
@@ -122,7 +122,7 @@
   }
 
   @media screen and (max-width: 920px) {
-    @apply h-[1400px];
+    @apply h-[1450px];
 
     .wrapper {
       @apply flex-col mt-0 items-start;
@@ -156,11 +156,11 @@
   }
 
   @media screen and (max-width: 750px) {
-    @apply h-[1500px];
+    @apply h-[1560px];
   }
 
   @media screen and (max-width: 620px) {
-    @apply px-[50px] h-[1400px];
+    @apply px-[50px] h-[1500px];
 
     .wrapper {
       .photo {
@@ -188,7 +188,7 @@
   }
 
   @media screen and (max-width: 520px) {
-    @apply h-[1250px] pr-0;
+    @apply h-[1380px] pr-0;
 
     .wrapper {
       .photo {
@@ -216,7 +216,7 @@
 
         .info_text {
           p {
-            @apply text-sm leading-6;
+            @apply text-sm leading-6 mb-1.5;
           }
         }
       }
@@ -224,7 +224,7 @@
   }
 
   @media screen and (max-width: 460px) {
-    @apply h-[1350px];
+    @apply h-[1440px];
   }
 
   @media screen and (max-width: 400px) {

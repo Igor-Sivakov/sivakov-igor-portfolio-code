@@ -2,35 +2,32 @@ import { FC } from 'react'
 import styles from './Description.module.scss'
 
 type PropsType = {
-  technologies: string
   title: string
   description: string
-  login?: { e: string; p: string }
+  login?: {
+    e: string
+    p: string
+  }
 }
 
-export const Description: FC<PropsType> = ({
-  technologies,
-  login,
-  title,
-  description,
-}) => {
+export const Description: FC<PropsType> = ({ title, description, login }) => {
   return (
     <div className={styles.root}>
-      <div className={styles.technologies}>{technologies}</div>
+      <h5>{title}</h5>
+      <p>{description}</p>
 
-      <div className={styles.description}>
-        <h5>{title}</h5>
-        <p>{description}</p>
-
-        {login && (
-          <div className={styles.login_info}>
+      {login && (
+        <div className={styles.login_info}>
+          <div>
             <span>LOGIN:</span>
             <span>{login.e}</span>
+          </div>
+          <div>
             <span>PASSWORD:</span>
             <span>{login.p}</span>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   )
 }

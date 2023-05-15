@@ -102,7 +102,7 @@ export const EmailForm: FC = () => {
         )}
 
         <button disabled={isSending} className={styles.submit} type='submit'>
-          {isSending ? <img src={preloader} alt='preloader' /> : 'submit'}
+          {isSending ? <img src={preloader} alt='preloader' /> : 'SUBMIT'}
         </button>
       </div>
 
