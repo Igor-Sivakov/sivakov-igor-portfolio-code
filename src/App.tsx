@@ -18,9 +18,9 @@ const App: FC = () => {
       <main className={styles.root}>
         <Header />
         <Home />
-        <About />
-        <Skills />
         <Projects />
+        <Skills />
+        <About />
         <MyGitHub />
         <Contact />
         <Footer />

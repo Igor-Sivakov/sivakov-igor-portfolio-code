@@ -1,5 +1,5 @@
 .root {
-  @apply h-[1000px] bg-soft-black flex items-center px-[100px];
+  @apply h-[1150px] bg-soft-black flex items-center px-[100px];
 
   .wrapper {
     @apply flex justify-between items-center -mt-20 w-full bg-transparent;
@@ -46,7 +46,7 @@
   }
 
   @media screen and (max-width: 1360px) {
-    @apply h-[1000px] px-[80px];
+    @apply h-[1100px] px-[80px];
 
     .wrapper {
       @apply -mt-5;
@@ -82,7 +82,7 @@
   }
 
   @media screen and (max-width: 1100px) {
-    @apply h-[1080px];
+    @apply h-[1150px];
 
     .wrapper {
       .photo {
@@ -122,7 +122,7 @@
   }
 
   @media screen and (max-width: 920px) {
-    @apply h-[1450px];
+    @apply h-[1500px];
 
     .wrapper {
       @apply flex-col mt-0 items-start;
@@ -156,11 +156,11 @@
   }
 
   @media screen and (max-width: 750px) {
-    @apply h-[1560px];
+    @apply h-[1610px];
   }
 
   @media screen and (max-width: 620px) {
-    @apply px-[50px] h-[1500px];
+    @apply px-[50px] h-[1550px];
 
     .wrapper {
       .photo {
@@ -188,7 +188,7 @@
   }
 
   @media screen and (max-width: 520px) {
-    @apply h-[1380px] pr-0;
+    @apply h-[1420px] pr-0;
 
     .wrapper {
       .photo {
@@ -224,7 +224,7 @@
   }
 
   @media screen and (max-width: 460px) {
-    @apply h-[1440px];
+    @apply h-[1460px];
   }
 
   @media screen and (max-width: 400px) {
