@@ -1,1 +1,1 @@
-export const menuItems = ['home', 'about', 'skills', 'projects', 'contacts']
+export const menuItems = ['home', 'projects', 'skills', 'about', 'contacts']
