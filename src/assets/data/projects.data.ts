@@ -7,6 +7,7 @@ import fewWorks from '../img/projects-screenshots/few-works.png'
 import mogo from '../img/projects-screenshots/mogo.png'
 import bootstrapLanding from '../img/projects-screenshots/landing-bootstrap.png'
 import ecommerceProject from '../img/projects-screenshots/ecommerce-project.png'
+import plugin from '../img/projects-screenshots/plugin.png'
 
 
 
@@ -90,7 +91,6 @@ export const projectsData = [
     app: 'https://igor-sivakov.github.io/a-few-works/',
     front: 'https://github.com/Igor-Sivakov/a-few-works-code',
   },
-
   {
     screenshot: bootstrapLanding,
     technologies: 'HTML / CSS / JS / BOOTSTRAP',
@@ -100,4 +100,13 @@ export const projectsData = [
     app: 'https://igor-sivakov.github.io/bootstrap-landing/',
     front: 'https://github.com/Igor-Sivakov/bootstrap-landing',
   },
+  {
+    screenshot: plugin,
+    technologies: 'VUE / EXPRESS',
+    title: 'Plugin for Figma',
+    description:
+      'Speller is a spell checking plugin for figma. I took part in its refactoring, refinement and correction of some errors.',
+    app: 'https://www.figma.com/community/plugin/1085813390515798975/Speller---Spell-checker-for-design',
+    front: 'https://github.com/Igor-Sivakov/speller-plugin-for-figma',
+  }
 ]
